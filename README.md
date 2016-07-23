@@ -1,4 +1,4 @@
-##Contributing to QuickBox Translations
+## Contributing to QuickBox Translations
 
 These files are maintained by the QuickBox community. If you would like to become a translator (the best way to experience QuickBox in your native language), please signup for the Lab and submit your request to join the Translator Group. Once accepted you will have Developer access allowing you to commit, merge and request changes to the language templates.
 
@@ -6,7 +6,7 @@ All changes to these templates are first verified by QuickBox Moderators and Adm
 
 ---
 
-###How to create a template for a new language
+### How to create a template for a new language
 
 Creating a template for a new language is fairly straight-forward. Simply copy one of the already made language templates and begin translating.
 
