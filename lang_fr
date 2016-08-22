@@ -82,6 +82,10 @@ $L['CPU_STATUS'] = 'Statut CPU';
 // server load widget
 $L['SERVER_LOAD'] = 'Charge Serveur';
 
+// recent updates widget
+$L['RECENT_UPDATES'] = 'Recent Updates';
+$L['RECENT_UPDATES_TXT'] = 'This list updates every 10 minutes';
+
 
 ////////////////////////////////////////
 //PACKAGE MANAGEMENT CENTER
@@ -101,6 +105,7 @@ $L['COUCHPOTATO'] = 'Téléchargez automatiquement des films, facilement et dans
 $L['CSF'] = 'ConfigServer Firewall, connu sous le nom de CSF, est un script de configuration de pare-feu créé pour assurer une meilleure sécurité pour votre serveur tout en vous donnant une interface avancée et facile à utiliser pour gérer vos paramètres de pare-feu.';
 $L['DELUGE'] = 'Deluge est un client BitTorrent léger, gratuit et multi-plateforme.';
 $L['JACKETT'] = 'Support API pour vos trackers privés préférés.';
+$L['NEXTCLOUD'] = 'NextCloud est un logiciel open source vous permettant d\'accéder depuis n\'importe quel endroit à vos documents importants. Il peut être installé sur n\'importe quel serveur et vous permet de synchroniser vos données (contacts, calendriers) \'dans le nuage\' sur votre serveur. Vous décidez de ce qui se passe avec vos données, où elles sont et qui peut y accéder!';
 $L['OVPN'] = 'VPN basé sur SSL/TLS. Supporté sur Solaris, OpenBSD, FreeBSD, NetBSD, Mac OS X, et Windows 2000/XP+.';
 $L['PLEX'] = 'Plex vous permet de diffuser votre contenu à tous vos dispositifs Plex activés.';
 $L['PLEX_REQUESTS'] = 'Plex Requests offre une belle interface pour que vos utilisateurs vous demandent facilement d\'ajouter de nouveaux films à la bibliothèque. S\'intègre avec CouchPotato, SickRage et Sonarr.';
@@ -118,10 +123,12 @@ $L['ZNC'] = 'ZNC est un bouncer IRC sous licence GPL. Celui-ci sera connecté en
 $L['CLI'] = 'Console Web Seulement';
 $L['INSTALL'] = 'Installer';
 $L['INSTALLED'] = 'Installé';
-$L['OVPN_TOOLTIP_I'] = 'Accedez à cette fonctionnalité depuis votre console web en tapant: "quickVPN".';
-$L['OVPN_TOOLTIP_U'] = 'Accedez à cette fonctionnalité depuis votre console web en tapant: "quickVPN".';
-$L['QBPM'] = 'BOX requis';
-$L['QBPM_TOOLTIP'] = 'Accedez à cette fonctionnalité en SSH simplement en tapant "box install <app>".';
+$L['OVPN_TOOLTIP_I'] = 'Accedez à cette fonctionnalité depuis votre console web en tapant: quickVPN.';
+$L['OVPN_TOOLTIP_U'] = 'Accedez à cette fonctionnalité depuis votre console web en tapant: quickVPN.';
+$L['BOX'] = 'BOX requis';
+$L['BOX_TOOLTIP_CSF'] = 'Accedez à cette fonctionnalité en SSH simplement en tapant: box install csf';
+$L['BOX_TOOLTIP_NEXTCLOUD'] = 'Accedez à cette fonctionnalité en SSH simplement en tapant: box install nextcloud';
+$L['BOX_TOOLTIP_ZNC'] = 'Accedez à cette fonctionnalité en SSH simplement en tapant: box install znc';
 
 ////////////////////////////////////////
 //BANDWIDTH & DATA TABLES
@@ -250,7 +257,12 @@ $L['UNINSTALLING'] = 'Désinstallation';
 ///////////////////////////////////////
 
 $L['REFRESH'] = 'Rafraîchir';
+$L['UPDATE'] = 'Run Updater';
 
+$L['CANCEL'] = 'Cancel';
+$L['AGREE'] = 'I understand, do it!';
+
+$L['CLOSE_REFRESH'] = 'Close & Refresh';
 
 ////////////////////////////////////////
 //ADDITIONAL DICTIONARY
@@ -269,7 +281,44 @@ $L['TOTAL_L'] = 'total';
 $L['USED_L'] = 'utilisé';
 
 
+////////////////////////////////////////
+//MODALS & POPUP NOTICES
+///////////////////////////////////////
 
+//MODAL TITLES
+$L['UNINSTALL_TITLE'] = 'Uninstall';
+
+
+//MODAL TEXT
+$L['UNINSTALL_BTSYNC_TXT'] = 'You are about to uninstall BitTorrent Sync from your system.<br/><br/>This will completely remove all of your configuration and shared folder settings... this action is irreversible. <br/><br/>You may reinstall BitTorrent Sync at any time, however, your storage path and linked folder settings will be reset to default.';
+$L['UNINSTALL_CSF_TXT'] = 'You are about to uninstall Config Server Firewall (CSF) from your system.<br/><br/>This will completely remove all of your configuration settings... this action is irreversible. <br/><br/>You may reinstall Config Server Firewall (CSF) at any time, however, your configuration settings (if any changes were made) will be reset to default.';
+$L['UNINSTALL_COUCHPOTATO_TXT'] = 'You are about to uninstall CouchPotato from your system.<br/><br/>This will completely remove all of your configurations and settings... this action is irreversible. <br/><br/>You may reinstall CouchPotato at any time, however, your settings will be reset to default.';
+$L['UNINSTALL_DELUGE_TXT'] = 'You are about to uninstall Deluge from your system.<br/><br/>This will completely remove all of your configuration and shared folder settings for <strong>all users</strong>... this action is irreversible. <br/><br/>You may reinstall Deluge at any time, however, your storage path and linked folder settings will be reset to default.';
+$L['UNINSTALL_JACKETT_TXT'] = 'You are about to uninstall Jackett from your system.<br/><br/>This will completely remove all of your configurations and settings... this action is irreversible. <br/><br/>You may reinstall Jackett at any time, however, your settings will be reset to default.';
+$L['UNINSTALL_NEXTCLOUD_TXT'] = 'You are about to uninstall NextCloud from your system.<br/><br/>This will completely remove all of your configurations and settings... this action is irreversible. <br/><br/>You may reinstall NextCloud at any time, however, your settings will be reset to default.';
+$L['UNINSTALL_PLEX_TXT'] = 'You are about to uninstall Plex Media Server from your system.<br/><br/>This will completely remove all of your configuration and library settings... this action is irreversible. <br/><br/>You may reinstall Plex at any time, however, your library settings will be reset to default.';
+$L['UNINSTALL_PLEXPY_TXT'] = 'You are about to uninstall PlexPy from your system.<br/><br/>This will completely remove all of your configuration and library settings... this action is irreversible. <br/><br/>You may reinstall PlexPy at any time, however, your settings will be reset to default.';
+$L['UNINSTALL_PLEXREQUESTS_TXT'] = 'You are about to uninstall Plex Requests from your system.<br/><br/>This will completely remove all of your configuration and library settings... this action is irreversible. <br/><br/>You may reinstall Plex Requests at any time, however, your library settings and requests will be reset.';
+$L['UNINSTALL_QUASSEL_TXT'] = 'You are about to uninstall Quassel from your system.<br/><br/> This will completely remove Quassel and all settings/stored backlogs from your system.';
+$L['UNINSTALL_QUOTAS_TXT'] = 'You are about to uninstall quotas from your system.<br/><br/> This will completely remove user quotas and any settings associated with them.';
+$L['UNINSTALL_RAPIDLEECH_TXT'] = 'You are about to uninstall Rapidleech from your system.<br/><br/>This will completely remove all of your configuration settings... this action is irreversible. <br/><br/>You may reinstall Rapidleech at any time, however, your configuration settings will be reset to default.';
+$L['UNINSTALL_SICKRAGE_TXT'] = 'You are about to uninstall SickRage from your system.<br/><br/>This will completely remove all of your configuration settings... this action is irreversible. <br/><br/>You may reinstall SickRage at any time, however, your configuration settings will be reset to default.';
+$L['UNINSTALL_SONARR_TXT'] = 'You are about to uninstall Sonarr from your system.<br/><br/>This will completely remove all of your configuration settings... this action is irreversible. <br/><br/>You may reinstall Sonarr-NzbDrone at any time, however, your configuration settings will be reset to default.';
+$L['UNINSTALL_SYNCTHING_TXT'] = 'You are about to uninstall Syncthing from your system.<br/><br/>This will completely remove all of your configuration settings... this action is irreversible. <br/><br/>You may reinstall Syncthing at any time, however, your configuration settings will be reset to default.';
+$L['UNINSTALL_X2GO_TXT'] = 'You are about to uninstall x2go from your system.<br/><br/> This will completely remove x2goserver and xfce4 desktop environment from your system.';
+$L['UNINSTALL_ZNC_TXT'] = 'You are about to uninstall ZNC from your system.<br/><br/>This will completely remove all of your configurations and settings... this action is irreversible. <br/><br/>You may reinstall ZNC at any time, however, your settings will be reset to default.';
+
+//SYSTEM RESPONSE MODAL
+$L['SYSTEM_RESPONSE_TITLE'] = 'System Response';
+
+
+
+//GRITTER POPUPS
+$L['UNINSTALLING_TITLE'] = 'Uninstalling';
+
+//GRITTER TEXT
+$L['UNINSTALLING_TXT_1'] = 'Please wait while';
+$L['UNINSTALLING_TXT_2'] = 'is being uninstalled from your system.';
 
 
 ////////////////////////////////////////////////////////////////////////////
