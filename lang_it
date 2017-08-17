@@ -28,11 +28,11 @@ $L['DISKTEST_TXT'] = 'Digita questo comando per eseguire un rapido test di lettu
 $L['FIXHOME_TXT'] = 'Digita questo comando per ripristinare i permessi sulla cartella /home.';
 // admin commands section
 $L['ADMIN_COMMANDS'] = 'Comandi dell' Admin';
-$L['SETDISK_TXT'] = 'Type this command in ssh to allocate the amount of disk space you would like to give to a user.';
-$L['CREATESEEDBOXUSER_TXT'] = 'Type this command in ssh to create a new seedbox user on your server.';
-$L['DELETESEEDBOXUSER_TXT'] = 'Type this command in ssh to delete a seedbox user on your server. You will need to enter the users account name, you will be prompted.';
-$L['CHANGEUSERPASS_TXT'] = 'Typing this command in ssh allows you to change a desired users password.';
-$L['QUICKVPN_TXT'] = 'Type this command in ssh to setup your own VPN server in no more than a minute as well manage and create new user certificates for using the VPN server.';
+$L['SETDISK_TXT'] = 'Digita questo comando via ssh per assegnare la quota di spazio sul disco ad un utente.';
+$L['CREATESEEDBOXUSER_TXT'] = 'Digita questo comando via ssh per creare un nuovo utente della seedbox sul tuo server.';
+$L['DELETESEEDBOXUSER_TXT'] = 'Digita questo comando via ssh per eliminare un utente della seedbox dal tuo server. T sarà richiesto di inserire il nome dell' utente da eliminare.';
+$L['CHANGEUSERPASS_TXT'] = 'Digita questo comando via ssh per modificare la password di un utente.';
+$L['QUICKVPN_TXT'] = 'Digita questo comando via ssh per configurare un tuo server VPN in meno di un minuto, compresi i certificati per usare il server VPN.';
 $L['SHOWSPACE_TXT'] = 'Use the above command as root to show the amount of disk space currently used by each user.';
 $L['UPGRADEBTSYNC_TXT'] = 'Type this command in ssh to upgrade BTSync to newest version when available.';
 $L['UPGRADEPLEX_TXT'] = 'Type this command in ssh to upgrade Plex to newest version when available.';
